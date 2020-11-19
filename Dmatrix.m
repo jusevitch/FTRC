@@ -1,3 +1,13 @@
+% 
+%      ____  ___   _____ ______   __          __    
+%     / __ \/   | / ___// ____/  / /   ____ _/ /_   
+%    / / / / /| | \__ \/ /      / /   / __ `/ __ \  
+%   / /_/ / ___ |___/ / /___   / /___/ /_/ / /_/ /  
+%  /_____/_/  |_/____/\____/  /_____/\__,_/_.___/   
+%                                                   
+% 
+% (C) 2020 James Usevitch
+
 function matrix = Dmatrix(numNodes, edges, special, kronecker)
 % DMATRIX  Creates an incidence matrix based on a number of nodes and a
 % vector of edges.

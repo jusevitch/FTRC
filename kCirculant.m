@@ -1,4 +1,14 @@
-function matrix = kCirculant(n,k,type)
+% 
+%      ____  ___   _____ ______   __          __    
+%     / __ \/   | / ___// ____/  / /   ____ _/ /_   
+%    / / / / /| | \__ \/ /      / /   / __ `/ __ \  
+%   / /_/ / ___ |___/ / /___   / /___/ /_/ / /_/ /  
+%  /_____/_/  |_/____/\____/  /_____/\__,_/_.___/   
+%                                                   
+% 
+% (C) 2020 James Usevitch
+
+ function matrix = kCirculant(n,k,type)
 % Creates Laplacian matrix for a k-circulant graph with n agents and with
 % parameter k.
 

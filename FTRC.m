@@ -1,6 +1,18 @@
-% Implementation of the finite time FTRC Protocol
+% 
+%      ____  ___   _____ ______   __          __    
+%     / __ \/   | / ___// ____/  / /   ____ _/ /_   
+%    / / / / /| | \__ \/ /      / /   / __ `/ __ \  
+%   / /_/ / ___ |___/ / /___   / /___/ /_/ / /_/ /  
+%  /_____/_/  |_/____/\____/  /_____/\__,_/_.___/   
+%                                                   
+% 
+% (C) 2020 James Usevitch
 
 function outstruct = FTRC(args)
+
+% Implementation of the finite time FTRC Protocol from the paper "Resilient
+% Finite-Time Consensus: A Discontinuous Systems Perspective" by James
+% Usevitch and Dimitra Panagou
 
 % args:
 %   n : number of nodes
