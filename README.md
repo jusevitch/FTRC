@@ -26,3 +26,5 @@ Example code:
   ```
   
   **Note:** The function `FTRC` automatically determines the maximum number of adversaries that the network can tolerate and uses this maximum number. This is the variable `F` in the function `FTRC`.
+  
+  **Another Note:** Finite time consensus is difficult to simulate exactly due to the inherent limitations of Euler's method. Two possible ways to deal with this limitation are 1) Stop the simulation when the error between agents drops below a particular threshold, or 2) Adaptively decrease your time step size as the distance between agents gets smaller and smaller.
