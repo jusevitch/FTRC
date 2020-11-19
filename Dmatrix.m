@@ -7,6 +7,7 @@
 %                                                   
 % 
 % (C) 2020 James Usevitch
+% University of Michigan Aerospace Engineering
 
 function matrix = Dmatrix(numNodes, edges, special, kronecker)
 % DMATRIX  Creates an incidence matrix based on a number of nodes and a

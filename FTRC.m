@@ -7,6 +7,7 @@
 %                                                   
 % 
 % (C) 2020 James Usevitch
+% University of Michigan Aerospace Engineering
 
 function outstruct = FTRC(args)
 

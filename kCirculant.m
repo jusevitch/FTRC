@@ -7,6 +7,7 @@
 %                                                   
 % 
 % (C) 2020 James Usevitch
+% University of Michigan Aerospace Engineering
 
  function matrix = kCirculant(n,k,type)
 % Creates Laplacian matrix for a k-circulant graph with n agents and with
