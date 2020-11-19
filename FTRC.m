@@ -21,12 +21,12 @@ dt = .0001;
 
 % Nonlinear function
 % g = @x3;
-g = @identity;
+g = @x3x5x7;
 
 alpha = 10; % weight for signum function
 
-a = 500; % for adversaries
-b = -500; % for adversaries
+a = 250; % for adversaries
+b = -250; % for adversaries
 
 % Create the communication graph
 
@@ -76,6 +76,13 @@ function outscalar = x3(y)
     outscalar = (1/500)*y.^3;
 end
 
+function outscalar = x3x5x7(y)
+    beta1 = 10;
+    beta2 = 1000;
+    beta3 = 10000;
+    outscalar = beta1*(y.^3) + beta2*(y.^5) + beta3*(y.^7);
+end
+
 
 function outvector = FTRC_step(state_vector)
     
@@ -100,7 +107,7 @@ function outvector = FTRC_step(state_vector)
         unfiltered_neib_states = [upper_states; lower_states];
         
         sum = ones(size(unfiltered_neib_states))'*(unfiltered_neib_states - g(state_vector(jj))*ones(size(unfiltered_neib_states)));
-        if abs(sum) < .01
+        if abs(sum) < .1
             sum = 0;
         end
         velocity_vector(jj) = alpha*sign(sum);
